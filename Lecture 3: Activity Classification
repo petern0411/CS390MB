@@ -1,0 +1,83 @@
+
+	How do we detect activities?
+
+- Should be simple to add an activity for the dectection 
+
+	What do we want?
+- Want to represent the characteristics of the signal such that different
+activities can be cleanly separated. 
+
+
+Step 1: Collect laeled data
+Step 2: Pre-process data
+	- remove noise from data
+Step 3: Segement the data
+	- Classify windows of data
+
+Why do we operate over windows?
+	- Many sensor signals vary over time, so you want to capture variabtions by
+	operating on windows. 
+	- 
+Step 4: Extract features for each window
+
+
+		Feature Extraction from Accelerometer Data:
+		- Time Domain:
+			- Statiscial Functions:
+				- Mean Median
+				- Variance, Std Deviation
+				- Min, Max, Range
+			- Other Functions:
+				- Sample differences
+				- Zero-Crossing
+				- SMA
+				- SMV,DSMV
+		- Frequency Domain:
+			- Wavlet transformations:
+				- Coefficients Sum
+			- Fourier Transformation:
+				- AC-,DC-component 
+				- Spectral Coefficients
+				- Energy 
+				- Entropy
+				- FFT Peak
+		- Discrete Domain:
+			- Symbolic String
+				- Euclidean Dist.
+				- Levenshtem Edit Dist.
+				- DTW, DDTW,
+				- Mean dist.
+
+	Frequency Doman features
+- Find peaks with some minmum separation and minumom prominence
+
+	Zero Crossings as a feature
+- 
+
+
+	Similarity as a feature
+
+- look at new activity and use a database to compare similarity with the new activity 
+
+	DTW: Dyanamic Time Warping
+- takes two signals and scale or stretch them to 
+
+- Use DTW distance as feature for hand gesture recognition 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
